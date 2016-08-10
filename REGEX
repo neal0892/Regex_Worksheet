@@ -1,0 +1,26 @@
+package practisePE;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Regex {
+
+	public static void main(String[] args) {
+
+		String line = "qweqamerr";
+		// String s = "^[^abc]";//it should start with anything but not a or b
+		// or c
+		// String s = "^[abc]";// it should start with either a or b or c
+		// String s = "[abc]+";// it contain abc 1 or more time
+	  //	String s = "[rst]$";// contains either r or s or t in the end
+		// String s = "[rst][rst][rst]$"; //contains either r or s or t as last three characters
+		// String s = "qweqam..."; // here the last three chars can be anything
+		// except newline
+		//String s = "[a]?";// means there can or cannot be "a" in the question marks place
+
+		Pattern p = Pattern.compile(s);
+		Matcher m = p.matcher(line);
+		// TODO Auto-generated method stub
+		System.out.println(m.find());
+	}
+}
